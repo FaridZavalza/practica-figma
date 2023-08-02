@@ -1,0 +1,51 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@media only screen and (max-width: 320px) {
+    header{
+        font-family:  'Raleway', sans-serif;
+    }
+}
+.principal--content__container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.slogan__container{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #858585;
+}
+.title__company{
+    font-size: 32px;
+    font-family: 'Abril Fatface';
+    text-align: center;
+    color: #000000;
+}
+.button__container{
+    width: 274px;
+    height: 32px;
+    display: flex;
+    justify-content: space-around;
+
+}
+button{
+    width: 125px;
+    font-family:  'Raleway', sans-serif;
+    size: 16px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 1)
+}
+.button__courses{
+    background-color: #000000;
+    color: white;
+}
+.button__shop{
+    background-color: white;
+}
