@@ -52,4 +52,9 @@ button {
 
 .button__shop {
   background-color: white;
+}
+
+.main__offer {
+  background-image: url("./images/manos-piano.png");
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=style.css.map */
