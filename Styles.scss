@@ -1,0 +1,143 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.page_logo_item{
+    height: 44px;
+    width: 88px;
+}
+
+.nav_menu{
+    height: 150px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.nav_main_menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.leyend{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #858585;
+    display: flex;
+    justify-content: center;
+}
+
+.main_title{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+    
+}
+
+.div_main_buttons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3px;
+}
+
+@mixin standart-button($button-color:black){
+    width: 129px;
+    height: 32px;
+    border:solid 1px;
+    border-radius: 8px;
+    background-color:$button-color;
+}
+
+.div_main_buttons{
+    .main_button_1{
+        @include standart-button();
+        color: white;
+    }
+    .main_button_2{
+        @include standart-button(white)
+    }
+}
+
+.main_piano_image{
+    display: flex;
+    justify-content: center;
+    .main_piano_image_img{width: 259.69px;
+    height: 194px;
+    margin: auto;
+ }
+}
+
+.main_offer{
+    width: 288px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.div_article_shopping_item{
+    background: linear-gradient(rgb(255, 255, 255), rgb(226, 226, 226));
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    .shopping__item{
+        width: 250px;
+        height: 350px;
+        background-color:white;
+        box-shadow: 20px 20px 50px 15px #bab7b7;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        border-radius: 9px;
+        padding: 15px;
+        .shopping__model{
+            font-size: 16px;
+            font-family: serif;
+        }
+        .shopping__features{
+            margin-top: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .offer-model__item_new{
+                list-style: none;
+            }
+        }
+        .article__button{
+            margin-top: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .article__price{
+                border: solid 1px;
+                border-radius: 9px;
+                display: flex;
+                justify-content: space-around;
+                width: 154px;
+                border: solid 2px;
+                align-items: center;
+            }
+            
+            .article__button-cart{
+                width: 36px;
+                height: 36px;
+                background-color: black;
+                border: none;
+                border-radius: 9px;
+            }
+        }
+    }
+    
+}
+
+
+
+.line{
+    border-top: 1px dashed #DBDBDB;
+    margin-top: 17px;
+    margin-bottom: 20px;
+}
