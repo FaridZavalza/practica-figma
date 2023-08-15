@@ -1,0 +1,95 @@
+/* Importaciónes de fuentes */
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway&family=Red+Hat+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Red+Hat+Display&display=swap");
+/* Reset del sitio */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Inician estilos de la sección partners */
+.partners__container {
+  padding: 20px 0;
+  background: linear-gradient(
+    178deg,
+    #6f6f6f 0%,
+    rgba(255, 255, 255, 0.43) 92%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .partners__title {
+    color: black;
+    font-size: 24px;
+    font-family: Abril Fatface;
+    font-weight: 400;
+    letter-spacing: 1.2px; // Separación horizontal
+    word-wrap: break-word;
+    text-align: center;
+    margin: 24px 0;
+  }
+
+  .partners__line {
+    display: flex;
+    &--item {
+      width: 288px;
+      height: 103px;
+      background-color: black;
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+
+      img {
+        margin: 0 7.2px;
+      }
+
+      p {
+        color: white;
+        font-size: 32px;
+        font-family: Raleway;
+        font-weight: 400;
+        word-wrap: break-word;
+        margin: 0 21px;
+      }
+    }
+  }
+
+  .border-right {
+    border-radius: 84px 14px 14px 84px;
+  }
+  .border-left {
+    border-radius: 14px 84px 84px 14px;
+    justify-content: flex-end;
+  }
+  .item-inactive {
+    display: none;
+  }
+}
+
+/* Media Query */
+@media screen and (min-width: 900px) {
+  .partners__container {
+    .partners__line {
+      &--item {
+        width: 328px;
+        height: 110px;
+        margin: 20px;
+        img {
+          margin: 0 7.2px;
+        }
+      }
+    }
+
+    .border-right {
+      border-radius: 84px;
+    }
+    .border-left {
+      border-radius: 84px;
+      justify-content: flex-end;
+    }
+    .item-inactive {
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
